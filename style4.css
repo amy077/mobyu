@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;900&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+a {
+  text-decoration:none
+}
+
+.container {
+  margin: auto;
+  position: relative;
+}
+
+header {
+  margin-left: 2px;
+  z-index: 1;
+  top: 0; left: -100px; right: -100px;
+  padding: 50px;
+}
+
+header nav {
+  position: absolute;
+  z-index: 2;
+  top: 0; right: 0;
+  margin-top: -25px;
+  margin-right: -40px;
+}
+
+header nav a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px; color: black;
+  display: inline-block; vertical-align: middle;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.gnb-memu {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 268px;
+  position: relative;
+  left: 10.3%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: 10;
+}
+
+.gnb-memu a {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  padding: 27px;
+  position: relative;
+  transition: all .7s ease-out;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.gnb-memu a strong {position: relative; z-index: 2;}
+.gnb-memu a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 80px;
+  height: 80%;
+  transition: all .7s ease;
+}
+
+.gnb-memu a:nth-child(1)::before {background: blue; opacity: 40%; background:linear-gradient(-70deg, transparent 80px, blue 0);}
+.gnb-memu a:nth-child(2)::before {background: blue; opacity: 40%; background:linear-gradient(-70deg, transparent 80px, blue 0);}
+.gnb-memu a:nth-child(3)::before {background: blue; opacity: 40%; background:linear-gradient(-70deg, transparent 80px, blue 0);}
+.gnb-memu a:nth-child(4)::before {background: blue; opacity: 40%; background:linear-gradient(-70deg, transparent 80px, blue 0);}
+.gnb-memu a:nth-child(5)::before {background: blue; opacity: 40%; background:linear-gradient(-70deg, transparent 80px, blue 0);}
+.gnb-memu a:hover {font-style: italic; color: #fff;}
+.gnb-memu a:hover::before {width: 70%; opacity: 100%;}
+
+.gnb-memu1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -800px;
+  margin-left: 450px;
+}
+
+.gnb-memu1 a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  color: #343434;
+  position: relative;
+  padding: 6px 12px;
+}
+
+.gnb-memu1 a {
+  opacity: 35%;
+  transition: all .3s ease-in-out;
+}
+
+.gnb-memu1 :hover {
+  opacity: 100%
+}
+
+.gnb-memu1 a {
+  position: relative;
+  padding: 6px 12px;
+}
+
+.gnb-memu1 a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 5px;
+  background: #222;
+  transition: all .3s ease-out;
+}
+
+.gnb-memu1 a:hover::after {
+  width: 100%;
+}
+
+.gnb-memu1 a:nth-child(1):after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 5px;
+  transition: all .3s ease-out;
+}
+
+.gnb-memu1 a:hover::after {
+  width: 100%;
+}
+
+#event1 {
+  opacity: 100%;
+}
+
+.memu1_bar {
+  height: 2px;
+  width: 1380px;
+  background-color: #2222;
+  position: relative;
+  z-index: 1;
+  float: left;
+  margin-left: 520px;
+  margin-top: 7px;
+}
+
+/*메인 타이틀*/
+.main_title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  color: #343434;
+  margin-left: 450px;
+  margin-top: 120px;
+}
+
+/*메인 이벤트 사진*/
+.event_1 {
+  display: block;
+  margin-left: 490px;
+  margin-top: -160px;
+}
+
+.event_1 img {
+  margin-top: 180px;
+}
+
+
+/*메인 베걍*/
+.background1 {
+  background-color: #f7f7f7;
+  width: 1500px;
+  height: 900px;
+  float: left;
+  margin-left: 400px;
+  margin-top: -700px;
+}
+
+/*메인 글*/
+.event_2 h3 {
+ color: #052ae2;
+ font-size: 15px;
+}
+
+.event_3 h3 {
+ color: #052ae2;
+ font-size: 15px;
+}
+
+.event_4 h3 {
+  color: #052ae2;
+  font-size: 15px;
+}
+
+.event_2 {
+  width: 400px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  color: #343434;
+  margin-left: 490px;
+  margin-top: -560px;
+  float: left;
+}
+
+.event_3 {
+  width: 400px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  color: #343434;
+  margin-left: 1160px;
+  margin-top: -560px;
+  float: left;
+}
+
+.event_4 {
+  width: 400px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  color: #343434;
+  margin-left: 490px;
+  margin-top: -170px;
+  float: left;
+}
+
+/*푸터*/
+.footer1 {
+  z-index: 1;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: #181818;
+  background-color: #eaeaea;
+  margin-top: 270px;
+  padding-top: 90px;
+  padding-left: 70px;
+  padding-bottom: 70px;
+}
+
+.footer2 {
+  float: left;
+  color: #8888;
+  font-size: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: 1250px;
+  margin-top: -140px;
+}

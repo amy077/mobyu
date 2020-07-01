@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;900&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+a {
+  text-decoration:none
+}
+
+body{background-color: #171717;}
+
+.container {
+  margin: auto;
+  position: relative;
+}
+
+header {
+  margin-left: 2px;
+  z-index: 1;
+  top: 0; left: -100px; right: -100px;
+  padding: 50px;
+}
+
+header nav {
+  position: absolute;
+  z-index: 2;
+  top: 0; right: 0;
+  margin-top: -25px;
+  margin-right: -25px;
+}
+
+header nav a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px; color: #fff;
+  display: inline-block; vertical-align: middle;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.gnb-memu {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 268px;
+  position: relative;
+  left: 10.3%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: 10;
+}
+
+.gnb-memu a {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 27px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.gnb-memu a strong {position: relative; z-index: 2;}
+.gnb-memu a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 80px;
+  height: 80%;
+  transition: all .7s ease;
+}
+
+.gnb-memu a:nth-child(1)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, #fff 0);}
+.gnb-memu a:nth-child(2)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, #fff 0);}
+.gnb-memu a:nth-child(3)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, #fff 0);}
+.gnb-memu a:nth-child(4)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, #fff 0);}
+.gnb-memu a:nth-child(5)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, #fff 0);}
+.gnb-memu a:hover {font-style: italic; color: #181818; background-color: 0;}
+.gnb-memu a:hover::before {width: 70%; opacity: 100%;}
+
+.gnb-memu1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -350px;
+  margin-left: 270px;
+}
+
+.gnb-memu1 a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+}
+
+.gnb-memu1 a {
+  opacity: 35%;
+  transition: all .3s ease-in-out;
+}
+
+.gnb-memu1 :hover {
+  opacity: 100%
+}
+
+.gnb-memu1 a {
+  position: relative;
+}
+
+.gnb-memu1 a::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 5px;
+  background: #fff;
+  transition: all .3s ease-out;
+}
+
+.gnb-memu1 a:hover::after {
+  width: 200%;
+}
+
+.gnb-memu1 a:nth-child(1):after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 5px;
+  background: #fff;
+  transition: all .3s ease-out;
+}
+
+.gnb-memu1 a:hover::after {
+  width: 200%;
+}
+
+#r1 {
+  opacity: 100%;
+}
+
+.memu1_bar {
+  margin-left: 100px;
+  margin-top: -6px;
+}
+
+
+/*메인 글*/
+.main1 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  margin-top: -340px;
+  margin-left: 300px;
+}
+
+/*푸터*/
+.footer2 {
+  position: relative;
+  float: left;
+  z-index: 200;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: 30px;
+  margin-top: 483px;
+}

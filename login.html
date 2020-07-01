@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="jquery-3.4.1.js"></script>
+  </head>
+
+
+  <body>
+  	<section class="login-from">
+
+  	<div class="container">
+  		<img src="메인 모뷰 로고_글자.png" width="270px" height="200px" alt="모뷰로고">
+  	</div>
+
+  	<div class="container1">
+  		<a href="index.html"><img src="엑스.png" width="50px" height="50px" alt="엑스"></a>
+  	</div>
+
+  		<form action="">
+  			<div class="int-area">
+  				<input type="text" name="id" id="id"
+  				autocomplete="off" required>
+  				<label for="id">아이디</label>
+  			</div>
+
+  			<div class="int-area">
+  				<input type="password" name="pw" id="pw"
+  				autocomplete="off" required>
+  				<label for="id">비밀번호</label>
+  			</div>
+
+  			<div class="bth-area">
+  				<button type="submit">로그인</button>
+  			</div>
+
+  		</form>
+  	</section>
+
+  	<script type="text/javascript">
+  		let id = $('#id');
+  		let pw = $('#pw');
+  		let btn = $('#btn');
+
+  		$(btn).on('click', fuction() {
+  			if ($(id).val() == "") {
+  				$(id).next('label').addClass('warning');
+  				setTimeout(fuction() {
+  					$('label').removaClass('warning');
+  				},1500)
+
+  			else if($(pw).val() == "") {
+  				$(pw).next('label').addClass('warning');
+  				setTimeout(fuction() {
+  					$('label').removaClass('warning');
+  				},1500)
+  			}
+
+
+  	</script>
+
+  </body>
+  </html>

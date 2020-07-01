@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;900&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {height: 100vh; overflow: hidden; background-color: #2222;}
+
+a {
+  text-decoration:none
+}
+
+.gnb-memu {
+  background: 0;
+  position: relative;
+  left: 10.3%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: 10;
+}
+
+.gnb-memu a {
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 27px;
+  position: relative;
+  transition: all .7s ease-out;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.gnb-memu a strong {position: relative; z-index: 2;}
+.gnb-memu a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 80px;
+  height: 80%;
+  transition: all .7s ease;
+}
+
+.gnb-memu a:nth-child(1)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, white 0);}
+.gnb-memu a:nth-child(2)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, white 0);}
+.gnb-memu a:nth-child(3)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, white 0);}
+.gnb-memu a:nth-child(4)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, white 0);}
+.gnb-memu a:nth-child(5)::before {background: #fff; opacity: 30%; background:linear-gradient(-70deg, transparent 80px, white 0);}
+.gnb-memu a:hover {font-style: italic; color: blue;}
+.gnb-memu a:hover::before {width: 70%; opacity: 100%;}
+
+.container {
+  max-width: 2000px;
+  margin: 0; auto;
+  position: relative;
+}
+
+
+.review1 {
+  font-family: 'Noto Sans KR', sans-serif;
+  float: left;
+  position: relative;
+  z-index: 3;
+  filter: drop-shadow(3px 0px 50px #000)
+}
+
+.review2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  float: left;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(3px 0px 50px #000)
+}
+
+.review2 img {
+  font-family: 'Noto Sans KR', sans-serif;
+  opacity: 90%;
+  margin-left: -200px;
+  -webkit-filter: grayscale(60%);
+  	filter: grayscale(50%);
+  	-webkit-transition: .3s ease-in-out;
+  	transition: .3s ease-in-out;
+}
+
+.review2 img:hover {
+  opacity: 100%;
+  -webkit-filter: grayscale(0);
+  	filter: grayscale(0);
+}
+
+.review3 {
+  font-family: 'Noto Sans KR', sans-serif;
+float: left;
+position: relative;
+z-index: 1;
+filter: drop-shadow(3px 0px 50px #000)
+}
+
+.review3 img {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -234px;
+  opacity: 75%;
+  -webkit-filter: grayscale(30%);
+    filter: grayscale(20%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+
+.review3 img:hover {
+  opacity: 100%;
+  -webkit-filter: grayscale(0);
+  	filter: grayscale(0);
+}
+
+p {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 20px;
+  font-size: 14px;
+  color: #000;
+}
+
+.review4 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -1380px;
+  margin-top: 150px;
+  width: 350px;
+  background: #fff;
+  opacity: 50%;
+  float: left;
+  position: relative;
+  z-index: 13;
+  background:linear-gradient(-70deg, transparent 10px, white 0);
+  transition: .3s ease-in-out;
+}
+
+.review4:hover {
+  opacity: 80%;
+}
+
+.review5 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -1420px;
+  margin-top: 320px;
+  width: 350px;
+  background: #fff;
+  opacity: 35%;
+  float: left;
+  position: relative;
+  z-index: 12;
+  background:linear-gradient(-70deg, transparent 10px, white 0);
+  transition: .3s ease-in-out;
+}
+
+.review5:hover {
+  opacity: 50%;
+}
+
+.review6 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -1470px;
+  margin-top: 500px;
+  width: 350px;
+  background: #fff;
+  opacity: 25%;
+  float: left;
+  position: relative;
+  z-index: 12;
+  background:linear-gradient(-70deg, transparent 10px, white 0);
+  transition: .3s ease-in-out;
+}
+
+.review6:hover {
+  opacity: 40%;
+}
+
+.review7 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -850px;
+  margin-top: 150px;
+  width: 350px;
+  background: #fff;
+  opacity: 15%;
+  float: left;
+  position: relative;
+  z-index: 12;
+  background:linear-gradient(-70deg, transparent 10px, white 0);
+  transition: .3s ease-in-out;
+}
+
+.review7:hover {
+  opacity: 20%;
+}
+
+.review8 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -890px;
+  margin-top: 320px;
+  width: 350px;
+  background: #fff;
+  opacity: 12%;
+  float: left;
+  position: relative;
+  z-index: 12;
+  background:linear-gradient(-70deg, transparent 10px, white 0);
+  transition: .3s ease-in-out;
+}
+
+.review8:hover {
+  opacity: 18%;
+}
+
+.review9 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -930px;
+  margin-top: 500px;
+  width: 350px;
+  background: #fff;
+  opacity: 9%;
+  float: left;
+  position: relative;
+  z-index: 12;
+  background:linear-gradient(-70deg, transparent 10px, white 0);
+  transition: .3s ease-in-out;
+}
+
+.review9:hover {
+  opacity: 15%;
+}
+
+.review10 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -370px;
+  margin-top: 150px;
+  width: 350px;
+  background: #fff;
+  opacity: 8%;
+  float: left;
+  position: relative;
+  z-index: 12;
+  background:linear-gradient(-70deg, transparent 10px, white 0);
+  transition: .3s ease-in-out;
+}
+
+.review10:hover {
+  opacity: 15%;
+}
+
+.review11 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: -410px;
+  margin-top: 320px;
+  width: 350px;
+  background: #fff;
+  opacity: 6%;
+  float: left;
+  position: relative;
+  z-index: 12;
+  background:linear-gradient(-70deg, transparent 10px, white 0);
+  transition: .3s ease-in-out;
+}
+
+.review11:hover {
+  opacity: 15%;
+}
+
+header {
+  position: fixed; z-index: 9;
+  top: 0; left: -100px; right: -100px;
+  padding: 150px;
+  transform: translateY(-100px);
+  transition: transform 1s ease;
+}
+header.active {transform: translateY(0);}
+
+header nav {
+  position: absolute;
+  z-index: 2;
+  top: 0; right: 0;
+  margin-top: -25px;
+  margin-right: -25px;
+}
+
+header nav a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px; color: #fff;
+  display: inline-block; vertical-align: middle;
+  padding: 5px; margin: 0 10px;
+}
+
+.footer2 {
+  position: relative;
+  float: left;
+  z-index: 200;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: 30px;
+  margin-top: -480px;
+}
